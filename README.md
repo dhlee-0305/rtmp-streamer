@@ -6,26 +6,26 @@
        
 [![NPM](https://nodei.co/npm/rtmp-streamer.png)](https://npmjs.org/package/rtmp-streamer)
 
-> 浏览器中通过内嵌swf推rtmp流的javascript库
+> 브라우저에 포함된 swf를 통해 rtmp 스트림을 푸시하는 javascript 라이브러리
 
 
 #### Demo
 
-可在任何http容器中加载项目目录来运行demo
+모든 http 컨테이너에 프로젝트 디렉토리를 로드하여 실행 demo
 
-如 [http-server](https://www.npmjs.com/package/http-server):
+처럼 [http-server](https://www.npmjs.com/package/http-server):
 
 ```bash
  $ http-server -p 8888 
 ```
 
-或 [PHP build-in web server](http://php.net/manual/en/features.commandline.webserver.php):
+또는 [PHP build-in web server](http://php.net/manual/en/features.commandline.webserver.php):
 
 ```bash
  $ php -S 0.0.0.0:8888 
 ```
 
-访问 `http://localhost:8888/demo`
+입장 `http://localhost:8888/demo`
 
 ![screenshot](http://blog.chxj.name/content/images/2016/06/screenshot.png)
 
@@ -45,7 +45,7 @@ OR
 
 #### Tutorial
 
-`rtmp-streamer` 遵循[AMD](http://requirejs.org/docs/whyamd.html)规范，可通过[`require.js`](http://requirejs.org/)等方式加载, 另外, 请确保在页面中引入了`RtmpStreamer.swf`, 否则`rtmp-streamer`将无法正确载入。
+`rtmp-streamer`는 [AMD](http://requirejs.org/docs/whyamd.html) 사양을 따르며 [`require.js`](http://requirejs.org/) 등을 통해 로드할 수 있습니다. 페이지에 `RtmpStreamer.swf`를 포함해야 합니다. 그렇지 않으면 `rtmp-streamer`가 올바르게 로드되지 않습니다.
 
 ```html
 <object>
@@ -170,23 +170,23 @@ require(["rtmp-streamer"], function (RtmpStreamer) {
 ```
 
 
-#### 快速搭建一个RTMP服务器？试试Wowza(https://www.wowza.com/free-trial)
+#### RTMP 서버를 빠르게 구축하시겠습니까? 노력하다 Wowza(https://www.wowza.com/free-trial)
 
 [Install & Configuration](https://www.wowza.com/forums/content.php?217-How-to-install-and-configure-Wowza-Streaming-Engine)
 
 ![wowza](http://blog.chxj.name/content/images/2016/06/wowza.png)
 
 
-#### 采用直播云服务
+#### 라이브 스트리밍 클라우드 서비스 채택
 
-以[七牛云](https://www.qiniu.com/products/pili)为例:
+테이크 [세븐 니우윤](https://www.qiniu.com/products/pili) 예를 들어:
 
-设置参数的方式和用OBS等工具推流时的方式类似, 地址为直播云的空间名, 数据流名称为直播流的名称加鉴权参数:
+매개변수를 설정하는 방법은 OBS와 같은 도구를 사용하여 스트림을 푸시하는 방법과 유사하며 주소는 라이브 클라우드의 공간 이름이고 데이터 스트림 이름은 라이브 스트림의 이름에 인증 매개변수를 더한 것입니다.:
 
 ![](http://blog.chxj.name/content/images/2017/03/Screen-Shot-2017-03-12-at-3.16.09-PM.png)
 
 
-在七牛的直播云管理后台中预览推流视频:
+Qiniu의 라이브 클라우드 관리 배경에서 푸시 비디오 미리보기:
 
 ![](http://blog.chxj.name/content/images/2017/03/Screen-Shot-2017-03-12-at-2.01.27-PM.png)
 
